@@ -2,11 +2,11 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://cqrjkj.gitee.io/bbibm_user_support
+url: http://zbeady.github.io/note_in_test
 date_format: "ordinal"
-title: 软江科技
-subtitle: "软江科技用户手册"
-keywords: 软江科技, 用户手册
+title: 清风
+subtitle: "笔记"
+keywords: 测试, 测试开发
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
