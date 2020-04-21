@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://zbeady.github.io/note_in_test
+url: https://zbeady.github.io/note_in_test
 date_format: "ordinal"
 title: 清风
 subtitle: "笔记"
