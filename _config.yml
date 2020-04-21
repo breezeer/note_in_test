@@ -1,0 +1,54 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: http://cqrjkj.gitee.io/bbibm_user_support
+date_format: "ordinal"
+title: 软江科技
+subtitle: "软江科技用户手册"
+keywords: 软江科技, 用户手册
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: 清风
+github_username: zbeady
+location: ChongQing, China
+email: zbeady@outlook.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: zbeady/zbeady.github.io
