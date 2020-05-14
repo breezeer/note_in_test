@@ -1,14 +1,12 @@
 ---
 layout: post
-title: 常用软件及系统配置
+title: 电脑常用软件和必要配置
 categories: 备份
 description: Windows
 keywords: Windows
 ---
 
-整理 Win 10 系统重装后常用软件的下载安装，以及一些系统的必要配置。
-
-# 常用软件及系统配置
+整理 Win 10 系统重装后，常用软件的下载安装，以及一些系统的必要配置。
 
 ## 常用软件
 
@@ -22,10 +20,10 @@ keywords: Windows
 - Chrome 隐藏滚动条「78 以上版本无效」：chrome://flags/#overlay-scrollbars
 - Chrome 开启多线程下载：chrome://flags/#enable-parallel-downloading
 
-### Office
+### Microsoft Office
 
 [Office 365](https://www.office.com/) | 
-[Office 2013-2019 C2R Install](http://forum.ru-board.com/topic.cgi?forum=2&topic=5693/)
+[Office 2013-2019 C2R Install](http://forum.ru-board.com/topic.cgi?forum=2&topic=5693)
 
 上次搞到一个教育版账号「zbeady@nCoV.office.gy」，密码是大小写加数字。
 
@@ -33,7 +31,7 @@ keywords: Windows
 
 [@vposy](https://www.weibo.com/vposy/)
 
-### 查毒软件
+### 杀毒软件
 
 [火绒安全](https://www.huorong.cn/)
 
@@ -43,11 +41,11 @@ keywords: Windows
 
 ### 编辑器
 
-[HBuilderX](https://www.dcloud.io/hbuilderx.html/)
+[HBuilderX](https://www.dcloud.io/hbuilderx.html)
 
 ### 音乐播放器
 
-[网易云音乐](https://music.163.com/#/download/) | 
+[网易云音乐](https://music.163.com/) | 
 [Listen 1](https://listen1.github.io/listen1/)
 
 ### 工具
@@ -59,8 +57,8 @@ keywords: Windows
 [calibre 电子书管理](https://calibre-ebook.com/download/) | 
 [OBS Studio 推流工具](https://obsproject.com/) | 
 [AirPlayer 投屏工具](https://pro.itools.cn/airplayer/) | 
-[ReNamer 文件批量改名](https://www.den4b.com/products/renamer/) | 
-[KindleGen 电子书格式修改](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211/) | 
+[ReNamer 文件批量改名](https://www.den4b.com/products/renamer) | 
+[KindleGen 电子书格式修改](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211) | 
 [Moo0 图片文件时间修改](https://zhs.moo0.com/software/TimeStamp/) | 
 [冰点文库下载器](http://www.bingdian001.com/)
 
@@ -82,7 +80,7 @@ keywords: Windows
 
 ### 照片查看器
 
-Win 10 默认使用「照片」应用查看图片，要换回传统的「照片查看器」需要导入注册表项，请将下面的代码保存为「.reg」格式并运行。
+Win 10 默认使用「照片」应用查看图片，要换回传统的「照片查看器」需要导入注册表项，请将下面的内容保存为「.reg」格式并运行后即可更改。
 
 ```
 Windows Registry Editor Version 5.00
@@ -116,7 +114,7 @@ Windows Registry Editor Version 5.00
 ### 文件共享
 
 1. 依次打开「控制面板 -> 系统和安全 -> 管理工具 -> 服务」，找到「Function Discovery Resource Publication」服务，将其设置为「自动启动」；
-2. 依次打开「控制面板 -> 程序 -> 程序和功能」，点击「启用或关闭Windows功能」，启用「SMB 1.0」功能。
+2. 依次打开「控制面板 -> 程序 -> 程序和功能 -> 启用或关闭 Windows 功能」，启用「SMB 1.0」功能。
 
 ### 代理
 
@@ -124,7 +122,7 @@ Windows Registry Editor Version 5.00
 [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/) 开启代理。
 推荐在 [泡芙云](https://paofu.cloud/auth/register?code=Zp6w/) 购买节点。
 
-开启代理后 UWP 应用将无法联网，需要下载 [Fiddler](https://www.telerik.com/fiddler/) 网络调试工具，在 WinConfig 中选择要启用网络的应用。
+开启代理后 UWP 应用将无法联网，需要下载 [Fiddler](https://www.telerik.com/fiddler) 网络调试工具，在 WinConfig 中选择要启用网络的应用。
 
 ## 其他
 
