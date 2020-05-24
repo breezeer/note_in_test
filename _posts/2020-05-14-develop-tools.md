@@ -139,7 +139,7 @@ default_authentication_plugin=mysql_native_password
 
 有很多强大功能。
 
-推荐一个需要投屏工具：[Scrcpy](https://github.com/Genymobile/scrcpy)
+推荐一个投屏工具：[Scrcpy](https://github.com/Genymobile/scrcpy)
 
 ## 产品经理相关
 

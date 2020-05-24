@@ -15,7 +15,7 @@ keywords: Windows
 - 停用：adb shell pm disable-user xxx
 - 启用：adb shell pm enable xxx
 
-## 不想看到的应用
+## 应用
 
 - com.vivo.game 游戏
 - com.chaozh.iReader 电子书

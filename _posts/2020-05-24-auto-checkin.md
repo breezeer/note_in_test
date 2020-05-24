@@ -41,7 +41,7 @@ print(res.text)
 
 ## 定时执行以上脚本
 
-使用 crontab 工具，用于创建定时任务。
+使用 crontab 工具创建定时任务。
 
 - crontab -l：查看当前设定的定时任务。
 - crontab -r：移除当前所有的定时任务。
