@@ -16,7 +16,9 @@ keywords: Windows
 [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/) | 
 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
 
-- 各个浏览器均可以登入账号同步数据。
+- 各个浏览器均可以登入账号同步数据，保存的密码啥的都在那里面。
+- Chrome 下载不用翻墙，但是同步需要。
+- Edge 也可以使用 Chrome 的插件。
 - Chrome 隐藏滚动条「78 以上版本无效」：chrome://flags/#overlay-scrollbars
 - Chrome 开启多线程下载：chrome://flags/#enable-parallel-downloading
 
@@ -25,7 +27,8 @@ keywords: Windows
 [Office 365](https://www.office.com/) | 
 [Office 2013-2019 C2R Install](http://forum.ru-board.com/topic.cgi?forum=2&topic=5693)
 
-上次搞到一个教育版账号「zbeady@nCoV.office.gy」，密码是大小写加数字。
+- 能用最新版就用最新版，人性化服务做的真的好。
+- 上次搞到一个教育版账号「zbeady@nCoV.office.gy」，密码是大小写加数字。
 
 ### Adobe 全家桶
 
@@ -43,10 +46,16 @@ keywords: Windows
 
 [HBuilderX](https://www.dcloud.io/hbuilderx.html)
 
+- 支持各种文件查看编辑。
+- 最好用的 Markdown 编辑器没有之一。
+
 ### 音乐播放器
 
 [网易云音乐](https://music.163.com/) | 
 [Listen 1](https://listen1.github.io/listen1/)
+
+- Apple Music 是真不好用。
+- 网易云音乐是真的贵。
 
 ### 工具
 
@@ -62,11 +71,15 @@ keywords: Windows
 [Moo0 图片文件时间修改](https://zhs.moo0.com/software/TimeStamp/) | 
 [冰点文库下载器](http://www.bingdian001.com/)
 
+各种小工具呢。
+
 ### 以下的只有上古宝藏版本
 
 [PotPlayer x64 1.6.59347.zip]() | 
 [WinRAR5.31.zip]() | 
 [ThunderSpeed1.0.35.366.exe]()
+
+这几个是老早以前下载的，一直存着的，已经不知道能在哪里下载的到了，估计哪次电脑换了就再也找不回来了吧。
 
 ## 系统配置
 
@@ -77,6 +90,8 @@ keywords: Windows
 - [Yahei Monaco Hybrid](https://github.com/maxsky/Yahei-Monaco-Hybrid-Font/releases/)
 - [JetBrains Mono](https://www.jetbrains.com/zh-cn/lp/mono/)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/)
+
+其实每个地方的默认字体都挺不错的。
 
 ### 照片查看器
 
@@ -109,23 +124,25 @@ Windows Registry Editor Version 5.00
 
 ### 虚拟内存
 
-依次打开「此电脑 -> 属性 -> 高级系统设置 -> 性能设置 -> 高级 -> 虚拟内存更改」，将系统管理的大小改为 D 盘。
+依次打开「此电脑 > 属性 > 高级系统设置 > 性能设置 > 高级 > 虚拟内存更改」，将系统管理的大小改为 D 盘。
 
 ### 文件共享
 
-1. 依次打开「控制面板 -> 系统和安全 -> 管理工具 -> 服务」，找到「Function Discovery Resource Publication」服务，将其设置为「自动启动」；
-2. 依次打开「控制面板 -> 程序 -> 程序和功能 -> 启用或关闭 Windows 功能」，启用「SMB 1.0」功能。
+1. 依次打开「控制面板 > 系统和安全 > 管理工具 > 服务」，找到「Function Discovery Resource Publication」服务，将其设置为「自动启动」；
+2. 依次打开「控制面板 > 程序 > 程序和功能 > 启用或关闭 Windows 功能」，启用「SMB 1.0」功能。
 
 ### 代理
 
+推荐在 [泡芙云](https://paofu.cloud/auth/register?code=Zp6w/) 购买节点。
 一般使用 [Shadowsocks](https://github.com/shadowsocks/shadowsocks-windows/releases/) 或
 [ShadowsocksR](https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/) 开启代理。
-推荐在 [泡芙云](https://paofu.cloud/auth/register?code=Zp6w/) 购买节点。
 
-开启代理后 UWP 应用将无法联网，需要下载 [Fiddler](https://www.telerik.com/fiddler) 网络调试工具，在 WinConfig 中选择要启用网络的应用。
+电脑开启代理后 UWP 应用将无法联网，需要下载 [Fiddler](https://www.telerik.com/fiddler) 网络调试工具，在 WinConfig 中选择要启用网络的应用。
 
 ## 其他
 
 ### Windows XP 激活码
 
 MRX3F-47B9T-2487J-KWKMF-RPWBY
+
+远古时期的一个操作系统的激活码，奇怪的是它一直都能用，也不知道哪天会失效。

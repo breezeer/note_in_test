@@ -6,11 +6,11 @@ description: Windows
 keywords: Windows
 ---
 
-整理 Win 10 系统中基本的测试环境的配置。
+记录功能测试中需要的基本的测试环境的配置。
 
 ## 环境变量
 
-一步到位，依次打开「此电脑 -> 属性 -> 高级系统设置 -> 环境变量 -> 用户变量」，加入下列内容。
+一步到位，依次打开「此电脑 > 属性 > 高级系统设置 > 环境变量 > 用户变量」，加入下列内容。
 
 ```
 Java_Home:
@@ -31,6 +31,8 @@ Path:
 
 [Fiddler](https://www.telerik.com/fiddler) | 
 [Charles Proxy](https://www.charlesproxy.com)
+
+两个软件功能都很强大，日常都只是用到一些基本的功能。
 
 ### 数据库工具
 
@@ -75,7 +77,7 @@ default_authentication_plugin=mysql_native_password
 3. 执行 net start mysql8 开启服务
 4. 执行 net stop mysql8 关闭服务
 
-配置数据库远程访问权限，需要使用非「root」用户。
+配置数据库远程访问权限，远程访问需要使用非「root」用户。
 
 1. 登录数据库：mysql -u root -p
 2. 修改密码：ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
@@ -84,6 +86,8 @@ default_authentication_plugin=mysql_native_password
 5. 修改权限：GRANT ALL PRIVILEGES ON *.* TO 'testuser'@'%';
 
 ### 虚拟机
+
+如果需要的话。
 
 [VMware Workstation Player](https://www.vmware.com/cn/products/workstation-player.html) | 
 [CentOS](https://mirrors.aliyun.com/centos/) | 
@@ -113,11 +117,19 @@ default_authentication_plugin=mysql_native_password
 <user username="testuser" password="123456" roles="manager-gui,admin-gui"/>
 ```
 
+#### 部署项目
+
+将项目「.war」包文件放入「webapps」文件夹中，启动服务即可。
+
 ## PHP 环境
 
 ### XAMPP
 
 [XAMPP](https://www.apachefriends.org/zh_cn/index.html)，其中包含了 MySQL 和 Tomcat，但是都是较老的版本。
+
+#### 部署项目
+
+将项目文件解压后放入「htdocs」文件夹中，启动服务即可。
 
 ## Android 环境
 
@@ -125,9 +137,22 @@ default_authentication_plugin=mysql_native_password
 
 [Android 调试桥 (adb)](https://developer.android.com/studio/command-line/adb)
 
+有很多强大功能。
+
+推荐一个需要投屏工具：[Scrcpy](https://github.com/Genymobile/scrcpy)
+
 ## 产品经理相关
 
 ### 原型图
 
 [Axure RP](https://www.axure.com/download) | 
 [Axure RP 汉化包](http://www.chanpinban.com/downloads/)
+
+激活：
+
+- macwk.com
+- WnXKElaO7BLA5KKZh9LpNLl/DsU62fHnnazJt5Gs4FzuOxkwgR3bYQNiSWyk7iVT
+- macwk.com
+- Cpvm3Fe/TOnZY2agskB3AxZe8a16QrW+NL2CUY9v9F+jyaOkv2suqshcVC81ZFha
+- macwk.com
+- eZZPVm1LL6KcZ6XpOLFfGezpdl9c49EAdOYdoEsNSA2TJGHu7tA5Voyyj+h1nPLo
