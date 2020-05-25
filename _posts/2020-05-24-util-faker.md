@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python 中的 Faker 工具
-categories: 测试开发
+categories: Python
 description: Windows
 keywords: Windows
 ---

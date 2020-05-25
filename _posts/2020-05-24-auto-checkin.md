@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 云服务器自动签卡
-categories: 备份
+categories: Python
 description: Windows
 keywords: Windows
 ---
