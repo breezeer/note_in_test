@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-<section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15}}">
+
+<section
+  class="collection-head small geopattern"
+  data-pattern-id="{{ page.title | truncate: 15}}"
+>
   <div class="container">
     <div class="columns">
       <div class="column two-thirds">
@@ -29,13 +33,10 @@ layout: default
       <article class="article-content markdown-body">
         {{ content }}
       </article>
-      <div class="share">
-      </div>
-      <div class="comment">
-      </div>
+      <div class="share"></div>
+      <div class="comment"></div>
     </div>
-    <div class="column one-third">
-    </div>
+    <div class="column one-third"></div>
   </div>
 </section>
 <!-- /section.content -->

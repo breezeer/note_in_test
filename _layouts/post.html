@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-<section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
+
+<section
+  class="collection-head small geopattern"
+  data-pattern-id="{{ page.title | truncate: 15, ''}}"
+>
   <div class="container">
     <div class="columns">
       <div class="column three-fourths">
@@ -10,13 +14,15 @@ layout: default
           <div class="collection-info">
             {% if page.date %}
             <span class="meta-info">
-              <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
+              <span class="octicon octicon-calendar"></span> {{ page.date |
+              date: "%Y/%m/%d" }}
             </span>
-            {% endif %}
-            {% for cat in page.categories %}
+            {% endif %} {% for cat in page.categories %}
             <span class="meta-info">
               <span class="octicon octicon-file-directory"></span>
-              <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+              <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}"
+                >{{ cat }}</a
+              >
             </span>
             {% endfor %}
           </div>
@@ -37,10 +43,8 @@ layout: default
       <article class="article-content markdown-body">
         {{ content }}
       </article>
-      <div class="share">
-      </div>
-      <div class="comment">
-      </div>
+      <div class="share"></div>
+      <div class="comment"></div>
     </div>
     <div class="column one-fourth">
       {% include sidebar-post-nav.html %}
