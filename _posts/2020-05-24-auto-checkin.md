@@ -6,7 +6,7 @@ description: Windows
 keywords: Windows
 ---
 
-.
+可以不迟到，但是会忘记打卡。
 
 ## 脚本
 

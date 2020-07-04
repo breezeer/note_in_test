@@ -6,7 +6,7 @@ description: Windows
 keywords: Windows
 ---
 
-记录功能测试中需要的基本的测试环境的配置。
+记录功能测试中需要的基本测试环境的配置。
 
 ## 环境变量
 
