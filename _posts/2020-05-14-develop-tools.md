@@ -18,7 +18,7 @@ Java_Home:
 MySQL_Home:
 	D:\Develop\MySQL
 Android_Home:
-	D:\Develop\android_sdk
+	D:\Develop\Android
 Path:
 	%Java_Home%\bin
 	%MySQL_Home%\bin
@@ -59,13 +59,13 @@ Path:
 
 ```
 [mysql]
-default-character-set=utf8
+default-character-set=utf8mb4
 [mysqld]
-port = 3306
-basedir=D:\\Develop\MySQL8
-datadir=D:\\Develop\MySQL8\SQLData
+port=3306
+basedir=D:\\Develop\MySQL
+datadir=D:\\Develop\MySQL\SQLData
 max_connections=20
-character-set-server=utf8
+character-set-server=utf8mb4
 default-storage-engine=INNODB
 default_authentication_plugin=mysql_native_password
 ```
