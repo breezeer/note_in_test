@@ -12,8 +12,6 @@ keywords: Windows
 
 ## 取经五众
 
-![97689578.jpg](https://shop.io.mi-img.com/app/shop/img?id=shop_d722a89be1ffdf5f673ca9fdfefdc1a2.jpeg)
-
 唐僧 江流儿 唐三藏 陈玄奘 金蝉子 旃檀功德佛  
 孙悟空 孙行者 美猴王 齐天大圣 斗战胜佛  
 猪悟能 猪刚鬣 猪八戒 天蓬元帅 净坛使者  
