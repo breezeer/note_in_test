@@ -1,3 +1,3 @@
 # 测试开发
 
-测试开发笔记。
+个人笔记。[tlog.zbeady.art](https://tlog.zbeady.art/)
