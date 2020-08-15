@@ -1,36 +1,37 @@
 <footer class="container">
-  <div class="site-footer" role="contentinfo">
-    <div class="copyright left mobile-block">
-      © 2020
-      <span title="{{ site.author}}">{{ site.author }}</span>
+    <div class="site-footer" role="contentinfo">
+        <div class="copyright left mobile-block">
+            © 2020
+            <span title="{{ site.author}}">{{ site.author }}</span>
+        </div>
+        <ul class="site-footer-links right mobile-hidden">
+            <li>
+                <a href="javascript:window.scrollTo(0,0)">TOP</a>
+            </li>
+        </ul>
+        <ul class="site-footer-links mobile-hidden">
+        </ul>
     </div>
-    <ul class="site-footer-links right mobile-hidden">
-      <li>
-        <a href="javascript:window.scrollTo(0,0)">TOP</a>
-      </li>
-    </ul>
-    <ul class="site-footer-links mobile-hidden">
-    </ul>
-  </div>
 </footer>
-<!-- / footer -->
 <script src="{{ site.url }}/assets/vendor/share.js/dist/js/share.min.js"></script>
 <script src="{{ site.url }}/assets/js/geopattern.js"></script>
 <script src="{{ site.url }}/assets/js/prism.js"></script>
 <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/prism.css">
 <script>
-  jQuery(document).ready(function ($) {
-    // geopattern
-    $('.geopattern').each(function () {
-      $(this).geopattern($(this).data('pattern-id'));
+    jQuery(document).ready(function($) {
+        $('.geopattern').each(function() {
+            $(this).geopattern($(this).data('pattern-id'));
+        });
     });
-    // hljs.initHighlightingOnLoad();
-  });
 </script>
 
 {% if page.mermaid %}
 <script src="{{ site.url }}/assets/js/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true });</script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+</script>
 {% endif %}
 
 {% if page.sequence %}
@@ -40,7 +41,9 @@
 <script src="{{ site.url }}/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.js"></script>
 <link rel="stylesheet" href="{{ site.url }}/assets/vendor/js-sequence-diagrams/dist/sequence-diagram-min.css">
 <script>
-  $(".language-sequence").sequenceDiagram({ theme: 'simple' });
+    $(".language-sequence").sequenceDiagram({
+        theme: 'simple'
+    });
 </script>
 {% endif %}
 
@@ -51,10 +54,8 @@
 {% endif %}
 
 {% if page.mathjax %}
-<script type="text/javascript"
-  src="https://basis-learning.github.io/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://basis-learning.github.io/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
 </body>
-
 </html>

@@ -1,27 +1,15 @@
-# ---------------- #
-#   Main Configs   #
-# ---------------- #
+url: https://tlog.zbeady.art
 baseurl:
-url: https://tlog.zbeady.art/
-date_format: "ordinal"
+date_format: ordinal
 title: 清风
-subtitle: "笔记"
-keywords: 测试, 测试开发
+subtitle: 三里清风三里路 步步清风步步你
+keywords: nice
 timezone: Asia/Shanghai
-encoding: "utf-8"
-side_bar_repo_limit: 5
+encoding: utf-8
 
-# ---------------- #
-#      Author      #
-# ---------------- #
 author: 清风
-github_username: zbeady
 location: 重庆
-email: zbeady@outlook.com
 
-# ---------------- #
-#    Navigation    #
-# ---------------- #
 navs:
   -
     href: /
@@ -30,9 +18,6 @@ navs:
     href: /categories/
     label: 分类
 
-# ---------------- #
-#      Jekyll      #
-# ---------------- #
 markdown: kramdown
 kramdown:
     input: GFM
@@ -49,9 +34,5 @@ plugins:
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
 
 repository: zbeady/zbeady.github.io
