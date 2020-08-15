@@ -2,8 +2,8 @@
 layout: post
 title: Chrome 开发者工具自带的截图工具的使用
 categories: 测试开发
-description: Windows
-keywords: Windows
+description: nice
+keywords: nice
 ---
 
 某次为了截取整个网页而发现的不怎么快捷的截图工具，不过不需要安装第三方插件，可以直接使用。
@@ -26,7 +26,7 @@ keywords: Windows
 
 截取当前选中的 Dom 元素。
 
-Ps: 在浏览器显示范围外的部分会白屏，无法正常显示。
+Ps: 在浏览器显示范围外的部分无法正常显示，保存后为白色空白区域。
 
 ### capture screenshot
 

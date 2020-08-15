@@ -2,8 +2,8 @@
 layout: post
 title: 基础测试环境配置
 categories: 测试开发
-description: Windows
-keywords: Windows
+description: nice
+keywords: nice
 ---
 
 记录功能测试中需要的基本测试环境的配置。
@@ -55,7 +55,7 @@ Path:
 
 [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 
-在解压后的目录下创建「my.ini」文件，内容如下。
+下载压缩包版的，在解压后的目录下创建「my.ini」文件，内容如下。
 
 ```
 [mysql]
@@ -72,18 +72,61 @@ default_authentication_plugin=mysql_native_password
 
 初始化数据库，并配置服务，初始密码会在初始化时显示在 cmd 的输出内容中。
 
-1. 进入 bin 目录下打开 cmd，执行 mysqld --initialize --console 进行初始化
-2. 执行 mysqld --install mysql8 安装服务
-3. 执行 net start mysql8 开启服务
-4. 执行 net stop mysql8 关闭服务
+1. 进入 bin 目录下打开 cmd，执行以下命令进行初始化
+
+    ``` shell
+    mysqld --initialize --console
+    ```
+
+2. 执行以下命令安装服务
+
+    ``` shell
+    mysqld --install mysql8
+    ```
+
+3. 执行以下命令开启服务
+
+    ``` shell
+    net start mysql8
+    ```
+
+4. 执行以下命令关闭服务
+
+    ``` shell
+    net stop mysql8
+    ```
 
 配置数据库远程访问权限，远程访问需要使用非「root」用户。
 
-1. 登录数据库：mysql -u root -p
-2. 修改密码：ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
-3. 进入数据库：use mysql;
-4. 创建用户：CREATE USER 'testuser'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
-5. 修改权限：GRANT ALL PRIVILEGES ON *.* TO 'testuser'@'%';
+1. 登录数据库
+
+    ``` sql
+    mysql -u root -p
+    ```
+
+2. 修改密码：
+
+    ``` sql
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+    ```
+
+3. 进入数据库：
+
+    ``` sql
+    use mysql;
+    ```
+
+4. 创建用户：
+
+    ``` sql
+    CREATE USER 'testuser'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+    ```
+
+5. 修改权限：
+
+    ``` sql
+    GRANT ALL PRIVILEGES ON *.* TO 'testuser'@'%';
+    ```
 
 ### 虚拟机
 
@@ -105,9 +148,23 @@ default_authentication_plugin=mysql_native_password
 
 配置服务。
 
-1. 进入 bin 目录下打开 cmd，执行 service install tomcat9 安装服务
-2. 执行 net start tomcat9 开启服务
-3. 执行 net stop tomcat9 关闭服务
+1. 进入 bin 目录下打开 cmd，执行以下命令安装服务
+
+    ``` shell
+    service install tomcat9
+    ```
+
+2. 执行以下命令开启服务
+
+    ``` shell
+    net start tomcat9
+    ```
+
+3. 执行以下命令关闭服务
+
+    ``` shell
+    net stop tomcat9
+    ```
 
 可以在「tomcat-users」文件中添加其他用户。
 
@@ -151,8 +208,8 @@ default_authentication_plugin=mysql_native_password
 激活：
 
 - macwk.com
-- WnXKElaO7BLA5KKZh9LpNLl/DsU62fHnnazJt5Gs4FzuOxkwgR3bYQNiSWyk7iVT
+    * WnXKElaO7BLA5KKZh9LpNLl/DsU62fHnnazJt5Gs4FzuOxkwgR3bYQNiSWyk7iVT
 - macwk.com
-- Cpvm3Fe/TOnZY2agskB3AxZe8a16QrW+NL2CUY9v9F+jyaOkv2suqshcVC81ZFha
+    * Cpvm3Fe/TOnZY2agskB3AxZe8a16QrW+NL2CUY9v9F+jyaOkv2suqshcVC81ZFha
 - macwk.com
-- eZZPVm1LL6KcZ6XpOLFfGezpdl9c49EAdOYdoEsNSA2TJGHu7tA5Voyyj+h1nPLo
+    * eZZPVm1LL6KcZ6XpOLFfGezpdl9c49EAdOYdoEsNSA2TJGHu7tA5Voyyj+h1nPLo

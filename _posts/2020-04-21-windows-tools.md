@@ -2,8 +2,8 @@
 layout: post
 title: 电脑常用软件和必要配置
 categories: 备份
-description: Windows
-keywords: Windows
+description: nice
+keywords: nice
 ---
 
 整理 Win 10 系统重装后，常用软件的下载安装，以及一些系统的必要配置。
@@ -13,7 +13,7 @@ keywords: Windows
 ### 浏览器
 
 [Google Chrome](https://www.google.cn/intl/zh-CN/chrome/) | 
-[Microsoft Edge](https://www.microsoft.com/zh-cn/edge/) | 
+[Microsoft Edge](https://www.microsoft.com/zh-CN/edge/) | 
 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
 
 - 各个浏览器均可以登入账号同步数据，保存的密码啥的都在那里面。
@@ -21,6 +21,7 @@ keywords: Windows
 - Edge 也可以使用 Chrome 的插件。
 - Chrome 隐藏滚动条「78 以上版本无效」：chrome://flags/#overlay-scrollbars
 - Chrome 开启多线程下载：chrome://flags/#enable-parallel-downloading
+- Chrome 关闭插件盒子：chrome://flags/#extensions-toolbar-menu
 
 ### Microsoft Office
 
@@ -28,7 +29,9 @@ keywords: Windows
 [Office 2013-2019 C2R Install](http://forum.ru-board.com/topic.cgi?forum=2&topic=5693)
 
 - 能用最新版就用最新版，人性化服务做的真的好。
-- 上次搞到一个教育版账号「zbeady@nCoV.office.gy」，密码是大小写加数字。
+- 上次搞到一个教育版账号「zbeady@nCoV.office.gy」。
+- 上次还搞了一个企业版体验账号「zbeady@guodoudou2.onmicrosoft.com」，可以登录[管理端](https://portal.office.com/)分配账号。已经设置了可以自动续期的脚本，但是不知道靠谱不靠谱。
+- 企业版体验账号[申请地址](https://developer.microsoft.com/en-us/microsoft-365/profile)。
 
 ### Adobe 全家桶
 
@@ -54,7 +57,7 @@ keywords: Windows
 [网易云音乐](https://music.163.com/) | 
 [Listen 1](https://listen1.github.io/listen1/)
 
-- Apple Music 是真不好用。
+- Apple Music ~~是真不好用~~，作为纯粹听歌的还不错。
 - 网易云音乐是真的贵。
 
 ### 工具
@@ -79,7 +82,7 @@ keywords: Windows
 [WinRAR5.31.zip]() | 
 [ThunderSpeed1.0.35.366.exe]()
 
-这几个是老早以前下载的，一直存着的，已经不知道能在哪里下载的到了，估计哪次电脑换了就再也找不回来了吧。
+这几个是老早以前下载的，一直存着，已经不知道能在哪里下载的到了，估计哪次丢了就再也找不回来了吧。
 
 ## 系统配置
 
@@ -89,7 +92,7 @@ keywords: Windows
 - [文悦古典明朝体](https://wytype.com/typeface/WenYue-GuDianMingChaoTi)
 - [Yahei Monaco Hybrid](https://github.com/maxsky/Yahei-Monaco-Hybrid-Font/releases/)
 - [JetBrains Mono](https://www.jetbrains.com/zh-cn/lp/mono/)
-- [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/)
+- [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) upup
 
 其实每个地方的默认字体都挺不错的。
 
@@ -123,6 +126,8 @@ Windows Registry Editor Version 5.00
 ```
 
 ### 虚拟内存
+
+如果 C 盘空间不是很多的话…
 
 依次打开「此电脑 > 属性 > 高级系统设置 > 性能设置 > 高级 > 虚拟内存更改」，将系统管理的大小改为 D 盘。
 

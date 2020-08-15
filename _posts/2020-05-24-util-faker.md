@@ -2,11 +2,11 @@
 layout: post
 title: Python 中的 Faker 工具
 categories: Python
-description: Windows
-keywords: Windows
+description: nice
+keywords: nice
 ---
 
-用于生成假数据。
+用于脚本中生成假数据。
 
 ## 官方文档
 
@@ -14,7 +14,7 @@ keywords: Windows
 
 工具本身支持各种语言，下面总结一下常用的方法。
 
-## 初始化
+## 初始化代码
 
 ``` Python
 from faker import Faker
@@ -22,7 +22,7 @@ from faker import Faker
 fake = Faker("zh_CN")  # 设置语言
 ```
 
-## 常用
+## 常用方法
 
 ### 地址
 

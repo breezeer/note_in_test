@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 云服务器自动签卡
+title: 云服务器自动打卡
 categories: Python
-description: Windows
-keywords: Windows
+description: nice
+keywords: nice
 ---
 
 可以不迟到，但是会忘记打卡。
@@ -49,7 +49,7 @@ print(res.text)
 
 定时任务的格式：分、时、日、月、星期、命令
 
-```
+``` shell
 50 8 * * 1-5 python ~/auto_checkin.py
 30 18 * * 1-5 python ~/auto_checkin.py
 ```
