@@ -30,7 +30,7 @@ keywords: nice
 
 - 能用最新版就用最新版，人性化服务做的真的好。
 - 上次搞到一个教育版账号「zbeady@nCoV.office.gy」。
-- 上次还搞了一个企业版体验账号「zbeady@guodoudou2.onmicrosoft.com」，可以登录[管理端](https://portal.office.com/)分配账号。已经设置了可以自动续期的脚本，但是不知道靠谱不靠谱。
+- 上次还搞了一个企业版体验账号「zbeady@guodoudou2.onmicrosoft.com」，可以登录[管理端](https://portal.office.com/)分配账号。已经设置了可以自动续期的脚本，~~但是不知道靠谱不靠谱~~成功了，续期成功了。
 - 企业版体验账号[申请地址](https://developer.microsoft.com/en-us/microsoft-365/profile)。
 
 ### Adobe 全家桶
