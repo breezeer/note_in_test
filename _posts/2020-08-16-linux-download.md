@@ -116,17 +116,3 @@ systemctl disable firewalld.service
 vi /etc/selinux/config
 修改 SELINUX=disabled
 ```
-
-## 时间同步服务
-
-安装 ntp
-
-``` shell
-yum install -y ntp
-```
-
-设置 ntp 服务开机启动
-
-``` shell
-systemctl enable ntpd
-```
