@@ -27,3 +27,5 @@ Ps: Tab 键可以自动补全。
 |rd xxx     |删除目录| |
 |del xxx    |删除文件| |
 |cls        |清除屏幕| |
+|netstat -ano \| findstr "80"  |查找端口占用程序 |只能查到 PID   |
+|tasklist \| findstr "1234"   |通过 PID 查找程序  | |
