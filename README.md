@@ -6,15 +6,19 @@
 
 需要 [Ruby](https://rubyinstaller.org/downloads/) 环境支持，并且只能使用 2.6 版本。
 
+``` text
+Ruby+Devkit 2.6.6-2 (x64)
+```
+
 安装好 Ruby 后，需要使用 Bundler 来安装和运行 Jekyll。在命令行输入以下命令安装 Bundler：
 
-```
+``` shell
 gem install bundler
 ```
 
 然后安装 Jekyll：
 
-```
+``` shell
 bundle install
 ```
 
@@ -24,13 +28,13 @@ bundle install
 
 接着就可以在本地运行项目了：
 
-```
+``` shell
 bundle exec jekyll serve
 ```
 
 应该能看到以下的输出：
 
-```
+``` shell
 Configuration file: D:/Code/note_in_test/_config.yml
             Source: D:/Code/note_in_test
        Destination: D:/Code/note_in_test/_site
