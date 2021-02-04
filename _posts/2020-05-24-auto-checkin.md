@@ -10,7 +10,7 @@ keywords: nice
 
 ## 脚本
 
-~/auto_checkin.py
+/home/checkin/auto_checkin.py
 
 ``` Python
 import random
@@ -50,6 +50,6 @@ print(res.text)
 定时任务的格式：分、时、日、月、星期、命令
 
 ``` shell
-50 8 * * 1-5 python ~/auto_checkin.py
-30 18 * * 1-5 python ~/auto_checkin.py
+50 8 * * 1-5 python /home/checkin/auto_checkin.py
+30 18 * * 1-5 python /home/checkin/auto_checkin.py
 ```

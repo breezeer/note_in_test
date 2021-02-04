@@ -37,11 +37,11 @@ yum makecache
 将下方内容保存为 .sh 文件并运行。
 
 ``` shell
-yum install -y wget gcc zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make libffi-devel 
+yum install -y wget gcc zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel make libffi-devel 
 cd ~ 
-wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz 
-tar -xJvf Python-3.8.5.tar.xz 
-cd Python-3.8.5 
+wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tar.xz 
+tar -xJvf Python-3.9.1.tar.xz 
+cd Python-3.9.1 
 ./configure prefix=/usr/local/python3 
 make && make install 
 mv /usr/bin/python /usr/bin/python.bak 
@@ -49,7 +49,7 @@ rm -rf /usr/bin/python
 ln -s /usr/local/python3/bin/python3 /usr/bin/python 
 ln -s /usr/local/python3/bin/pip3  /usr/bin/pip 
 cd ~ 
-rm -rf Python-3.8.5 Python-3.8.5.tar.xz 
+rm -rf Python-3.9.1 Python-3.9.1.tar.xz 
 ```
 
 修改 Python 版本后可能会出现 yum 无法使用的情况，需要配置让 yum 使用系统默认的 Python 版本。
