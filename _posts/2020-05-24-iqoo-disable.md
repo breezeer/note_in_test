@@ -6,7 +6,7 @@ description: nice
 keywords: nice
 ---
 
-不想看到系统中的一些垃圾应用，又不敢强制卸载，只能停用它们，但是过段时间又会一个一个冒出来。
+已经全部强制卸载了。
 
 ## 需要用到的工具
 
@@ -22,6 +22,12 @@ keywords: nice
 
     ``` shell
     adb shell pm enable xxx
+    ```
+
+- 强制卸载：
+
+    ``` shell
+    xxx
     ```
 
 ## 想要禁用的应用

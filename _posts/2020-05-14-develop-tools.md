@@ -10,19 +10,19 @@ keywords: nice
 
 ## 环境变量
 
-一步到位，依次打开「此电脑 > 属性 > 高级系统设置 > 环境变量 > 用户变量」，加入下列内容。
+一步到位，依次打开「设置 > 系统 > 关于 > 高级系统设置 > 环境变量 > 用户变量」，加入下列内容。
 
 ```
 Java_Home:
 	C:\Program Files\Java\jdk
 MySQL_Home:
 	D:\Develop\MySQL
-Android_Home:
+ANDROID_HOME:
 	D:\Develop\Android
 Path:
 	%Java_Home%\bin
 	%MySQL_Home%\bin
-	%Android_Home%\platform-tools
+	%ANDROID_HOME%\platform-tools
 ```
 
 ## 通用
@@ -32,13 +32,11 @@ Path:
 [Fiddler](https://www.telerik.com/fiddler) | 
 [Charles Proxy](https://www.charlesproxy.com)
 
-两个软件功能都很强大，日常都只是用到一些基本的功能。
-
 ### 数据库工具
 
 [Navicat Premium](https://www.navicat.com.cn/products/)
 
-激活「已失效」
+激活「已失效，旧版本可用」
 
 1. 下载 [Navicat Keygen](https://github.com/DoubleLabyrinth/navicat-keygen/releases/)
 2. 命令行：navicat-patcher.exe "C:\Program Files\PremiumSoft\Navicat Premium 12"
@@ -72,7 +70,7 @@ default_authentication_plugin=mysql_native_password
 
 初始化数据库，并配置服务，初始密码会在初始化时显示在 cmd 的输出内容中。
 
-1. 进入 bin 目录下打开 cmd，执行以下命令进行初始化
+1. 进入 bin 目录下以管理员身份打开 cmd，执行以下命令进行初始化
 
     ``` shell
     mysqld --initialize --console
@@ -148,7 +146,7 @@ default_authentication_plugin=mysql_native_password
 
 配置服务。
 
-1. 进入 bin 目录下打开 cmd，执行以下命令安装服务
+1. 进入 bin 目录下以管理员身份打开 cmd，执行以下命令安装服务
 
     ``` shell
     service install tomcat9
@@ -188,13 +186,56 @@ default_authentication_plugin=mysql_native_password
 
 将项目文件解压后放入「htdocs」文件夹中，启动服务即可。
 
+## 静态资源
+
+### Apache httpd
+
+[Apache httpd](https://httpd.apache.org/)
+
+配置服务。
+
+1. 进入 bin 目录下以管理员身份打开 cmd，执行以下命令安装服务
+
+    ``` shell
+    httpd -k install -n apache
+    ```
+
+2. 执行以下命令开启服务
+
+    ``` shell
+    net start apache
+    ```
+
+3. 执行以下命令关闭服务
+
+    ``` shell
+    net stop apache
+    ```
+
+可以在「conf/httpd.conf」文件中配置端口号和文件目录等。
+
+    ``` conf
+    ServerRoot "${SRVROOT}"
+    Listen 9100
+    ```
+
+### Python
+
+在目标文件夹下执行命令
+
+``` Python
+python -m http.server
+```
+
+### Nginx
+
+[Nginx](https://nginx.org/en/download.html)
+
 ## Android 环境
 
 ### adb
 
 [Android 调试桥 (adb)](https://developer.android.com/studio/command-line/adb)
-
-有很多强大功能。
 
 推荐一个投屏工具：[Scrcpy](https://github.com/Genymobile/scrcpy)
 

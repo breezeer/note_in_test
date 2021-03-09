@@ -6,7 +6,7 @@ description: nice
 keywords: nice
 ---
 
-整理 Win 10 系统重装后，常用软件的下载安装，以及一些系统的必要配置。
+整理 Win10 系统重装后，常用软件的下载安装，以及一些系统的必要配置。
 
 ## 常用软件
 
@@ -16,12 +16,10 @@ keywords: nice
 [Microsoft Edge](https://www.microsoft.com/zh-CN/edge/) | 
 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)
 
-- 各个浏览器均可以登入账号同步数据，保存的密码啥的都在那里面。
-- Chrome 下载不用翻墙，但是同步需要。
-- Edge 也可以使用 Chrome 的插件。
+- Chrome 下载不需要开代理。
+- Edge 也可以使用 Chrome 的插件，复制 Chrome 商店的地址到 Edge 中即可。
 - Chrome 隐藏滚动条「78 以上版本无效」：chrome://flags/#overlay-scrollbars
 - Chrome 开启多线程下载：chrome://flags/#enable-parallel-downloading
-- Chrome 关闭插件盒子：chrome://flags/#extensions-toolbar-menu
 
 ### Microsoft Office
 
@@ -30,8 +28,10 @@ keywords: nice
 
 - 能用最新版就用最新版，人性化服务做的真的好。
 - 上次搞到一个教育版账号「zbeady@nCoV.office.gy」。
-- 上次还搞了一个企业版体验账号「zbeady@guodoudou2.onmicrosoft.com」，可以登录[管理端](https://portal.office.com/)分配账号。已经设置了可以自动续期的脚本，~~但是不知道靠谱不靠谱~~成功了，续期成功了。
-- 企业版体验账号[申请地址](https://developer.microsoft.com/en-us/microsoft-365/profile)。
+    - 说是永久使用的
+    - 目前还能用
+- 开发者体验账号[管理端](https://portal.office.com/)。
+- 开发者体验账号[申请地址](https://developer.microsoft.com/en-us/microsoft-365/profile)。
 
 ### Adobe 全家桶
 
@@ -49,16 +49,10 @@ keywords: nice
 
 [HBuilderX](https://www.dcloud.io/hbuilderx.html)
 
-- 支持各种文件查看编辑。
-- 最好用的 Markdown 编辑器没有之一。
-
 ### 音乐播放器
 
 [网易云音乐](https://music.163.com/) | 
 [Listen 1](https://listen1.github.io/listen1/)
-
-- Apple Music ~~是真不好用~~，作为纯粹听歌的还不错。
-- 网易云音乐是真的贵。
 
 ### 工具
 
@@ -74,8 +68,6 @@ keywords: nice
 [Moo0 图片文件时间修改](https://zhs.moo0.com/software/TimeStamp/) | 
 [冰点文库下载器](http://www.bingdian001.com/)
 
-各种小工具呢。
-
 ### 以下的只有上古宝藏版本
 
 [PotPlayer x64 1.6.59347.zip]() | 
@@ -90,15 +82,12 @@ keywords: nice
 
 - [方正清刻本悦宋](https://www.foundertype.com/index.php/FontInfo/index/id/199.html/)
 - [文悦古典明朝体](https://wytype.com/typeface/WenYue-GuDianMingChaoTi)
-- [Yahei Monaco Hybrid](https://github.com/maxsky/Yahei-Monaco-Hybrid-Font/releases/)
 - [JetBrains Mono](https://www.jetbrains.com/zh-cn/lp/mono/)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code/releases/) upup
 
-其实每个地方的默认字体都挺不错的。
-
 ### 照片查看器
 
-Win 10 默认使用「照片」应用查看图片，要换回传统的「照片查看器」需要导入注册表项，请将下面的内容保存为「.reg」格式并运行后即可更改。
+Win10 默认使用「照片」应用查看图片，要换回传统的「照片查看器」需要导入注册表项，请将以下内容保存为「.reg」格式并运行后即可更改。
 
 ```
 Windows Registry Editor Version 5.00
@@ -127,9 +116,9 @@ Windows Registry Editor Version 5.00
 
 ### 虚拟内存
 
-如果 C 盘空间不是很多的话…
+如果 C 盘空间不够用的话可以尝试此设置。
 
-依次打开「此电脑 > 属性 > 高级系统设置 > 性能设置 > 高级 > 虚拟内存更改」，将系统管理的大小改为 D 盘。
+依次打开「设置 > 系统 > 关于 > 高级系统设置 > 性能设置 > 高级 > 虚拟内存更改」，将系统管理的大小改为 D 盘。
 
 ### 文件共享
 
@@ -150,4 +139,4 @@ Windows Registry Editor Version 5.00
 
 MRX3F-47B9T-2487J-KWKMF-RPWBY
 
-远古时期的一个操作系统的激活码，奇怪的是它一直都能用，也不知道哪天会失效。
+远古时期的一个操作系统的激活码，亲测可用。

@@ -6,7 +6,7 @@ description: nice
 keywords: nice
 ---
 
-可以不迟到，但是会忘记打卡。
+真的会忘记打卡。
 
 ## 脚本
 
@@ -18,7 +18,7 @@ import time
 
 import requests
 
-time.sleep(random.randint(1, 580))  # 随机时间
+time.sleep(random.randint(1, 580))  # 随机时间 10 分钟
 
 url_login = 'http://url/index.php?a=check&m=login&d=&ajaxbool=true'
 url_pass = 'http://url/api.php?m=kaoqin&a=adddkjl'

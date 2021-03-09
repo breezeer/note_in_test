@@ -45,6 +45,9 @@ fake.color_name()  # 颜色
 ``` Python
 fake.date(pattern='%Y-%m-%d')  # 日期
 fake.time(pattern='%H:%M:%S')  # 时间
+fake.date_this_year()  # 随机今天之前今年的某一天
+fake.date_this_year()  # 随机的生日
+fake.date_between_dates(date_start=date(2010, 1, 1), date_end=None)  # 随机时间段中的某一天，需要引入 datetime.datetime
 ```
 
 ### 网络
@@ -77,6 +80,7 @@ fake.simple_profile()  # 简要个人信息
 fake.word()  # 单词
 fake.text(max_nb_chars=200)  # 一段文字
 fake.pyint(min_value=1000, max_value=9999, step=2)  # 生成一个随机数
+fake.pyfloat(left_digits=None, right_digits=2, positive=True, min_value=50, max_value=240)  # 生成一个随机小数
 fake.pylist(nb_elements=30)  # 生成一个列表
 fake.pydict(nb_elements=30)  # 生成一个字典
 ```
