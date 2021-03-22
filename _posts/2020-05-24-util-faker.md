@@ -10,7 +10,7 @@ keywords: nice
 
 ## 官方文档
 
-[Faker](https://faker.readthedocs.io/en/master/locales/zh_CN.html)
+[Faker 官方文档](https://faker.readthedocs.io/en/master/locales/zh_CN.html)
 
 工具本身支持各种语言，下面总结一下常用的方法。
 

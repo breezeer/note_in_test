@@ -1,10 +1,12 @@
 ---
 layout: post
-title: CentOS 7 下的命令
+title: CentOS 7 下的实用配置
 categories: 测试开发
 description: nice
 keywords: nice
 ---
+
+记录几个 CentOS 下关于环境配置方面的好东西。
 
 ## 配置 yum 为阿里镜像源
 

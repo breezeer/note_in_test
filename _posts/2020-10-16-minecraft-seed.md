@@ -6,6 +6,8 @@ description: nice
 keywords: nice
 ---
 
+在这个世界里任何事物都是美好的。
+
 ## 种子
 
 ``` shell
