@@ -100,6 +100,18 @@ SET GLOBAL validate_password.length = 6;
 firewall-cmd --state
 ```
 
+开放防火墙端口
+
+``` shell
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
+```
+
+加载端口修改配置
+
+``` shell
+firewall-cmd --reload
+```
+
 停止 firewall
 
 ``` shell
